@@ -1,20 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from "react-native";
+
+import { AsyncSkia } from "./src/AsyncSkia";
+import { Fallback } from "./src/Fallback";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{ backgroundColor: "rgb(36,43,56)", flex: 1 }}>
+      <AsyncSkia
+        fallback={<Fallback />}
+        getComponent={() => import("./src/Breathe")}
+      />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "eas-update-versioned-cli-test",
-    "slug": "eas-update-versioned-cli-test",
+    "name": "Expo Skia",
+    "slug": "expo-skia-demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -28,7 +28,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "https://icogen.vercel.app/api/favicon?icon=1f338&color_hex=00000000"
     },
     "runtimeVersion": {
       "policy": "sdkVersion"
