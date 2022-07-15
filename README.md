@@ -1,5 +1,7 @@
 # Expo Skia Demo
 
+> [Web Demo](https://expo-skia.netlify.app/)
+
 1. `yarn` -- install packages
 2. Run `node copy-canvaskit-wasm.js web` -- copy public file (this may be upstreamed).
 3. `expo start --web` -- start
